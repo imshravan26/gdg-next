@@ -11,8 +11,8 @@ const GetToKnowUs = () => {
         <h2 className="text-3xl text-center p-4 border-b-4 rounded-md border-blue text-gray-600 dark:text-gray-300 font-semibold mb-6">
           Our Mission
         </h2>
-        <div className="flex items-center">
-          <div className="w-1/2">
+        <div className=" flex items-center">
+          <div className="w-1/2 hidden sm:block">
             <svg
               width="533"
               height="533"
@@ -426,8 +426,8 @@ const GetToKnowUs = () => {
               />
             </svg>
           </div>
-          <div className="w-1/2 pl-8">
-            <p className="text-xl border-r-4 rounded-lg border-blue ">
+          <div className="  md:w-1/2 ">
+            <p className="text-xl pr-7 border-r-4 rounded-lg border-blue text-justify ">
               Our mission involves community engagement, leadership development,
               building a strong tech foundation, while enabling all tech
               enthusiasts to contribute to the global society.
@@ -442,7 +442,7 @@ const GetToKnowUs = () => {
         </h2>
         <div className="flex items-center">
           <div className="w-1/2 pr-8">
-            <p className="text-xl text-gray-600 dark:text-gray-300 border-l-4 rounded-lg border-green pl-4">
+            <p className="text-xl text-justify  text-gray-600 dark:text-gray-300 border-l-4 rounded-lg border-green pl-4">
               We're a community-driven initiative aiming to bridge the gap
               between research and practice, develop evolutionary thinking and
               network throughout the process. We believe in connecting fellow

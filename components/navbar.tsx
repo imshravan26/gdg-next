@@ -64,12 +64,15 @@ export const Navbar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="flex-1 justify-end" justify="end">
-        <ul className="hidden lg:flex items-center gap-4 ml-2">
+      <NavbarContent
+        className="flex items-center justify-end gap-10  "
+        justify="end"
+      >
+        <ul className="hidden lg:flex items-center gap-8 ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className="text-gray-800 text-lg hover:text-gray-500 transition-colors"
+                className="text-gray-800 text-lg hover:text-gray-500 transition-colors dark:text-gray-200 dark:hover:text-gray-300"
                 color="foreground"
                 href={item.href}
               >

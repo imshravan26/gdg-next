@@ -32,7 +32,7 @@ export default function Home() {
         <div className="mt-8 w-full">
           <Hero />
         </div>
-        <div className="mt-16 sm:mt-72 flex flex-col items-center justify-center max-w-3xl">
+        <div className="mt-72 flex flex-col items-center justify-center max-w-3xl">
           <p className="text-center text-gray-700 dark:text-gray-200 font-normal text-lg sm:text-xl">
             Google Developer Groups are community groups for college and
             university students interested in Google developer technologies.
