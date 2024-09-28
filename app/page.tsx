@@ -1,55 +1,76 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import React from "react";
+import Image from "next/image";
+import Hero from "@/components/hero";
+import GetToKnowUs from "@/components/gettoknowus";
+import WhatKeepsUsGoing from "@/components/whatkeepsusgoing";
+import Technologies from "@/components/technologies";
+import FAQ from "@/components/faq";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-        <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+    <section className="flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center w-full max-w-7xl">
+        <div className="text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-2">
+            <Image
+              src="/google.svg"
+              alt="google"
+              width={180}
+              height={90}
+              className="w-48 h-24 sm:w-60 sm:h-30"
+            />
+            <span className="text-3xl sm:text-5xl font-bold">
+              Developer Groups
+            </span>
+          </div>
+          <div className="mt-4">
+            <span className="text-2xl sm:text-4xl font-semibold text-gray-600 dark:text-gray-200">
+              RBU Chapter
+            </span>
+          </div>
+        </div>
+        <div className="mt-8 w-full">
+          <Hero />
+        </div>
+        <div className="mt-16 sm:mt-72 flex flex-col items-center justify-center max-w-3xl">
+          <p className="text-center text-gray-700 dark:text-gray-200 font-normal text-lg sm:text-xl">
+            Google Developer Groups are community groups for college and
+            university students interested in Google developer technologies.
+          </p>
+          <button className="px-8 sm:px-10 py-2 sm:py-3 font-semibold rounded-md mt-4 text-white bg-[#3686F7] shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+            Join Us
+          </button>
+        </div>
+        <div className="mt-8 flex flex-col justify-center ">
+          {[33, 153, 255].map((opacity, index) => (
+            <svg
+              key={index}
+              width="30"
+              height="20"
+              viewBox="0 0 59 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-5 sm:w-10 sm:h-6"
+            >
+              <path
+                d="M52.0675 6.20899e-07L29.5 23.4872L6.9325 8.26692e-08L3.66919e-07 7.23077L29.5 38L59 7.23077L52.0675 6.20899e-07Z"
+                fill={`#5F5F5F${opacity.toString(16).padStart(2, "0")}`}
+              />
+            </svg>
+          ))}
         </div>
       </div>
-
-      <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({
-            color: "primary",
-            radius: "full",
-            variant: "shadow",
-          })}
-          href={siteConfig.links.docs}
-        >
-          Documentation
-        </Link>
-        <Link
-          isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
-        >
-          <GithubIcon size={20} />
-          GitHub
-        </Link>
+      <div className="w-full max-w-7xl">
+        <GetToKnowUs />
       </div>
-
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
+      <div className="w-full max-w-7xl">
+        <WhatKeepsUsGoing />
+      </div>
+      <div className="w-full max-w-7xl">
+        <Technologies />
+      </div>
+      <div className="w-full max-w-7xl">
+        <FAQ />
       </div>
     </section>
   );
