@@ -1,52 +1,70 @@
-# Next.js & NextUI Template
+# GDG Next - Task Submission 🚀
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+Welcome to **GDG Next** — your one-stop solution for a modern, responsive website for Google Developer Groups (GDG). This project is a submission for the GDG college club task, built to demonstrate technical proficiency and design skills.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Table of Contents
 
-## Technologies Used
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## About the Project
 
-## How to Use
+**GDG Next** is a fully responsive and interactive web application designed to provide an engaging online presence for Google Developer Groups (GDG). This project focuses on showcasing upcoming events, chapters, and opportunities, while offering a seamless user experience.
 
-### Use the template with create-next-app
+This project is built with modern frontend technologies and adheres to best practices in web development.
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Features
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+- 🌐 **Responsive Design**: Fully adaptable for mobile, tablet, and desktop devices.
+- 📅 **Event Listing**: Display upcoming GDG events with dates and registration links.
+- 🎓 **Chapters Overview**: Overview of different GDG chapters and their key features.
+- 🚀 **Modern UI/UX**: Clean and elegant user interface that enhances user engagement.
+- 🔄 **Smooth Animations**: Aesthetic transitions and animations for a more interactive experience.
 
-### Install dependencies
+## Tech Stack
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+- **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [shadcn](https://shadcn.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-```bash
-npm install
-```
+## Getting Started
 
-### Run the development server
+To get a local copy of the project up and running, follow these steps:
 
-```bash
-npm run dev
-```
+### Prerequisites
 
-### Setup pnpm (optional)
+You need to have the following installed:
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+- [Node.js](https://nodejs.org/en/) (v14+)
+- [Git](https://git-scm.com/)
 
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
+### Installation
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/gdg-next.git
+   ```
+
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. If you have suggestions to make this project better, feel free to open an issue or submit a pull request.
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/YourFeature)
+Commit your Changes (git commit -m 'Add some feature')
+Push to the Branch (git push origin feature/YourFeature)
+Open a Pull Request
+Contact
+For any queries or collaboration ideas, feel free to contact:
+
+Shravan
+Email: shravanchaudhari99@gmail.com
+LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/shravan-chaudhari-91699a1b6/)
 
 ## License
 
