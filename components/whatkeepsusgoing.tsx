@@ -9,7 +9,7 @@ const WhatKeepsUsGoing = () => {
       <div className="h-1 w-48 bg-yellow rounded-lg mx-auto mb-12"></div>
 
       <div className="flex mb-16 items-center justify-center">
-        <div className=" ">
+        <div className=" hidden sm:block  ">
           <svg
             width="450"
             height="300"
@@ -2087,7 +2087,7 @@ const WhatKeepsUsGoing = () => {
             />
           </svg>
         </div>
-        <div className="w-2/5 pl-8 p-6 flex items-center">
+        <div className="md:w-2/5 md:pl-8 p-6 flex items-center">
           <div>
             <p className="mb-4 text-justify text-lg text-gray-600 dark:text-gray-300">
               Our club helps students to connect, learn, empower and grow.
@@ -2112,7 +2112,9 @@ const WhatKeepsUsGoing = () => {
             <div className="relative inline-flex">
               <div className="w-24 h-24 border-4 border-gray-200 rounded-full"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-2xl dark:text-gray-800 z-10 font-bold">{item.value}</span>
+                <span className="text-2xl dark:text-gray-800 z-10 font-bold">
+                  {item.value}
+                </span>
               </div>
               <div className="absolute ">
                 <svg
@@ -2147,7 +2149,6 @@ const WhatKeepsUsGoing = () => {
                     rx="89.0835"
                     ry="89.0836"
                     fill="white"
-                   
                   />
                   <defs>
                     <filter

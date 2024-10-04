@@ -12,13 +12,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center w-full max-w-7xl">
         <div className="text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-2">
-            <Image
-              src="/google.svg"
-              alt="google"
-              width={180}
-              height={90}
-              className="w-48 h-24 sm:w-60 sm:h-30"
-            />
+            <Image src="/google.svg" alt="google" width={200} height={200} />
             <span className="text-3xl sm:text-5xl font-bold">
               Developer Groups
             </span>

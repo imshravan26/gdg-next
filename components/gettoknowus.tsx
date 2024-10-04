@@ -441,7 +441,7 @@ const GetToKnowUs = () => {
           Our Perspective
         </h2>
         <div className="flex items-center">
-          <div className="w-1/2 pr-8">
+          <div className="md:w-1/2 md:pr-8">
             <p className="text-xl text-justify  text-gray-600 dark:text-gray-300 border-l-4 rounded-lg border-green pl-4">
               We're a community-driven initiative aiming to bridge the gap
               between research and practice, develop evolutionary thinking and
@@ -450,7 +450,7 @@ const GetToKnowUs = () => {
               solution-driven team.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 hidden sm:block">
             <svg
               width="579"
               height="386"
